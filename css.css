@@ -1,1 +1,297 @@
+/* ==============================
+   General Page Styling
+   ============================== */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   Headings
+   ============================== */
+
+h1 {
+    text-align: center;
+    color: #17365d;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-top: 0;
+}
+
+h3 {
+    color: #17365d;
+    border-left: 5px solid #17365d;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+
+/* ==============================
+   Paragraph
+   ============================== */
+
+p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==============================
+   College Image
+   ============================== */
+
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 3px solid #17365d;
+    max-width: 100%;
+}
+
+
+/* ==============================
+   Links
+   ============================== */
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d35400;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   Lists
+   ============================== */
+
+ol,
+ul {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+/* ==============================
+   Tables
+   ============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+tr:hover {
+    background-color: #e3edf7;
+}
+
+
+/* ==============================
+   Timetable
+   ============================== */
+
+table:last-of-type {
+    font-size: 13px;
+}
+
+table:last-of-type td,
+table:last-of-type th {
+    vertical-align: middle;
+}
+
+table hr {
+    border: none;
+    border-top: 1px solid #bbb;
+    margin: 8px 0;
+}
+
+
+/* ==============================
+   Form
+   ============================== */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 280px;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #17365d;
+    box-shadow: 0 0 4px rgba(23, 54, 93, 0.3);
+}
+
+
+/* ==============================
+   Radio Buttons & Checkboxes
+   ============================== */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+
+/* ==============================
+   Submit & Reset Buttons
+   ============================== */
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background-color: #17365d;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d2747;
+}
+
+input[type="reset"] {
+    background-color: #777;
+    color: white;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+
+/* ==============================
+   Horizontal Rule
+   ============================== */
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+
+/* ==============================
+   Responsive Design
+   ============================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    select {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
